@@ -3,7 +3,7 @@
 
 ## Overview
 
-This data analysis project investigates income disparities across the United States using 2020 US Census data, developed as a group project for a Python-based data processing course. Leveraging Python, we conducted exploratory data analysis (EDA), visualized socio-economic factors, and built a predictive model to estimate household income based on education, employment, and demographic characteristics. The project aims to uncover insights into income variations and provide actionable recommendations for addressing disparities.
+This data analysis project investigates income disparities across the United States using 2020 US Census data, developed as a group project for BUDT704: Data Processing and Analysis in Python (Fall 2022, taught by Professor John Bono) at the Robert H. Smith School of Business, University of Maryland, College Park. Leveraging Python, we conducted exploratory data analysis (EDA), visualized socio-economic factors, and built a predictive model to estimate household income based on education, employment, and demographic characteristics. The project aims to uncover insights into income variations and provide actionable recommendations for addressing disparities.
 
 **Primary Objectives**:
 - Analyze median household income variations across US states.
@@ -97,6 +97,13 @@ The dataset, sourced from the [US Census Data website](https://data.census.gov/)
 - `census_income_analysis.py`: Python script for data preprocessing, EDA, visualization, and predictive modeling.
 - `docs/US_Census_Data_Analysis_Python_Project.pdf`: Comprehensive project report detailing methodology, findings, and recommendations.
 - `LICENSE`: GNU General Public License v3.0.
+
+## Course Information
+
+- **Course**: BUDT704: Data Processing and Analysis in Python
+- **Professor**: John Bono
+- **Semester**: Fall 2022
+- **Institution**: Robert H. Smith School of Business, University of Maryland, College Park
 
 ## Challenges and Lessons Learned
 
