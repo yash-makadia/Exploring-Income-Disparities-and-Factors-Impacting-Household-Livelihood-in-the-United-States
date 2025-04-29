@@ -1,39 +1,136 @@
-# Exploring-Income-Disparities-and-Factors-Impacting-Household-Livelihood-in-the-United-States
+# Exploring Income Disparities and Factors Impacting Household Livelihood in the United States
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-## Introduction
+## Overview
 
-Welcome to my project focused on analyzing income patterns and exploring the various factors influencing household livelihood in the United States. This project was done as a group project for the course BUDT704: Data Processing and Analysis in Python.  As a group of passionate graduate students in MSIS of the University of Maryland College Park, we conducted this project to gain insights into income disparities and shed light on areas that require assistance. Through data analytics, visualizations, and predictive modeling, our aim is to contribute to a better understanding of the factors that impact income and identify opportunities for improvement.
+This data analysis project investigates income disparities across the United States using 2020 US Census data, developed as a group project for a Python-based data processing course. Leveraging Python, we conducted exploratory data analysis (EDA), visualized socio-economic factors, and built a predictive model to estimate household income based on education, employment, and demographic characteristics. The project aims to uncover insights into income variations and provide actionable recommendations for addressing disparities.
 
-## Project Description
+**Primary Objectives**:
+- Analyze median household income variations across US states.
+- Explore relationships between income, education, and employment types.
+- Develop a predictive model to estimate income and identify key influencing factors.
+- Recommend strategies for states to improve median household income.
 
-In this project, we delve into the data from the US Census to investigate the relationship between income and various socio-economic factors. By exploring questions related to education, employment, and other characteristics, we aim to uncover insights that can help address income disparities in different states. Additionally, we develop a predictive model to estimate income based on these factors, providing valuable insights for organizations and policymakers.
+## Features
 
-## Questions Explored
+- **Exploratory Data Analysis**: Visualizes income distributions, employment types, and education levels across states.
+- **Data Preprocessing**: Consolidates and cleans US Census data using zip codes as the primary key.
+- **Predictive Modeling**: Builds a model to estimate household income based on socio-economic factors.
+- **Actionable Insights**: Identifies opportunities for states to enhance income through targeted interventions.
 
-1. What is the median household income in the United States, and how does it vary across different states? How is the distribution of employment types related to income?
-2. How do the distribution of education levels and employment within a state impact income levels?
-3. Can we build a predictive model to understand the impact of each factor on income and estimate the income for a given state based on these factors?
-4. Based on the income predicted by the model, what opportunities exist for states to improve their median household income, and what factors are crucial in achieving this improvement?
-   
-## Why These Questions Matter
+## Dataset
 
-Part 1: Understanding variations in median income across states provides valuable insights into economic disparities and successful employment structures. By identifying states that fall below the national average, we can focus our efforts on exploring potential improvement opportunities.
+The dataset, sourced from the [US Census Data website](https://data.census.gov/) for 2020, includes:
+- **Economic Characteristics**: Income, employment types (from table DP03).
+- **Demographic and Housing**: Age, race, housing estimates (DP05).
+- **Educational Attainment**: Education levels (S1501).
+- **Financial Characteristics**: Housing unit finances (S2506).
 
-Part 2: Exploring the relationship between education levels and income helps us determine if higher education leads to better job prospects and increased income. By comparing states with the highest and lowest income levels, we aim to validate the impact of education on income.
+**Access**: Data is publicly available at [https://data.census.gov/](https://data.census.gov/). Due to size, the consolidated dataset is not hosted in the repository but can be recreated using the provided code.
 
-Part 3: Developing a robust model enables us to make accurate income predictions, facilitating the identification of states with room for improvement.
+## Methodology
 
-Part 4: Once we identify states with potential for change, we must prioritize factors contributing to income improvement. Our analysis will guide organizations in determining where to focus their efforts first.
+### Data Preparation
+- **Data Collection**: Combined tables DP03, DP05, S1501, and S2506 using zip codes as the primary key.
+- **Preprocessing**:
+  - Cleaned missing values and standardized formats.
+  - Merged datasets to create a comprehensive analysis-ready dataset.
+- **Exploratory Data Analysis (EDA)**:
+  - Analyzed median household income by state, identifying disparities.
+  - Visualized distributions of employment types and education levels.
+  - Compared high- and low-income states to assess education’s impact on income.
 
-## Dataset Description
+### Modeling
+- **Predictive Model**: Developed a regression model (e.g., Linear Regression or Random Forest) to estimate household income based on features like education level, employment type, and demographic factors.
+- **Feature Selection**: Identified key predictors (e.g., education attainment, employment status) through correlation analysis and feature importance.
+- **Evaluation**: Assessed model performance using metrics like Mean Squared Error (MSE) and R-squared.
 
-The data used in this project was obtained from the US Census data website (https://data.census.gov/) for the year 2020. We collected information from the following tables:
+### Visualizations
+- Created plots (e.g., histograms, bar charts, scatter plots) to illustrate income variations, employment distributions, and education-income relationships.
+- Used libraries like Matplotlib and Seaborn for clear, informative graphics.
 
-DP03: Economic characteristics</br>
-DP05: Demographic and housing estimates</br>
-S1501: Educational attainment</br>
-S2506: Financial characteristics for housing units</br>
+### Libraries
+- Python libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`.
 
-To analyze the data, we leveraged our knowledge and skills to consolidate and preprocess the data. By combining relevant columns from these tables using the zip code as the primary key, we created a comprehensive dataset for my analysis.
+## Setup Instructions
 
-Finally, I would like to extend my gratitude to exceptional team members Satvik Narang, Shweta Salelkar, and Anushka Ranjan for their invaluable contributions, collaborative spirit, and dedication throughout this project. I would also like to express my heartfelt appreciation to our professor Dr. John Bono for his unwavering support and guidance.
+### Prerequisites
+- Python (version 3.8 or higher).
+- Jupyter Notebook or any Python IDE (e.g., VS Code, PyCharm).
+- Install required libraries:
+  ```bash
+  pip install pandas numpy matplotlib seaborn scikit-learn
+  ```
+
+### Installation
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yash-makadia/Exploring-Income-Disparities-and-Factors-Impacting-Household-Livelihood-in-the-United-States.git
+   cd Exploring-Income-Disparities-and-Factors-Impacting-Household-Livelihood-in-the-United-States
+   ```
+2. **Download the Dataset**:
+   - Access raw data from [https://data.census.gov/](https://data.census.gov/) (tables DP03, DP05, S1501, S2506).
+   - Place CSV files in the repository root or update file paths in `census_income_analysis.py`.
+3. **Run the Code**:
+   - Open `census_income_analysis.py` in a Python IDE or Jupyter Notebook.
+   - Update dataset paths in the script as needed.
+   - Execute the script to preprocess data, generate visualizations, and train the predictive model.
+
+## Key Findings
+
+- **Income Disparities**: Significant variations in median household income across states, with some states consistently below the national average.
+- **Education Impact**: Higher education levels correlate with increased income, particularly in high-income states.
+- **Employment Types**: States with diverse employment structures (e.g., professional, technical jobs) tend to have higher median incomes.
+- **Model Insights**: The predictive model identified education and employment as top factors influencing income, enabling targeted policy recommendations.
+
+## Impact and Recommendations
+
+- **For Policymakers**: Focus on improving education access and job training in low-income states to reduce disparities.
+- **For Organizations**: Invest in workforce development programs targeting high-impact sectors identified by the model.
+- **Actionable Insights**:
+  - Prioritize educational attainment to boost income potential.
+  - Promote diverse employment opportunities in underperforming states.
+  - Use model predictions to identify states with the greatest improvement potential.
+
+## Project Files
+
+- `census_income_analysis.py`: Python script for data preprocessing, EDA, visualization, and predictive modeling.
+- `docs/US_Census_Data_Analysis_Python_Project.pdf`: Comprehensive project report detailing methodology, findings, and recommendations.
+- `LICENSE`: GNU General Public License v3.0.
+
+## Challenges and Lessons Learned
+
+- **Data Integration**: Merging multiple Census tables required careful preprocessing to align zip codes and handle missing data.
+- **Feature Selection**: Identifying the most impactful features for income prediction involved iterative analysis.
+- **Key Takeaways**:
+  - Robust data cleaning is essential for reliable analysis.
+  - Visualizations enhance understanding of complex socio-economic trends.
+  - Predictive models provide actionable insights for policy decisions.
+
+## Future Scope
+
+- Incorporate additional Census years for temporal analysis.
+- Explore advanced models (e.g., Gradient Boosting, Neural Networks) for improved accuracy.
+- Analyze regional disparities within states for more granular insights.
+- Develop an interactive dashboard for real-time income analysis.
+
+## References
+
+- [US Census Data](https://data.census.gov/)
+- Python Documentation: [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/), [scikit-learn](https://scikit-learn.org/)
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with your changes. Ensure compliance with the GPL-3.0 license.
+
+## Contact
+
+For questions or feedback, please open an issue on GitHub or contact the project maintainer at [yashmakadia1908@gmail.com](mailto:yashmakadia1908@gmail.com).
+
+## Acknowledgments
+
+Special thanks to my team for their dedication and collaborative spirit. I express gratitude to Professor John Bono for his guidance and support throughout the project.
