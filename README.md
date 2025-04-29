@@ -70,9 +70,9 @@ The dataset, sourced from the [US Census Data website](https://data.census.gov/)
    ```
 2. **Download the Dataset**:
    - Access raw data from [https://data.census.gov/](https://data.census.gov/) (tables DP03, DP05, S1501, S2506).
-   - Place CSV files in the repository root or update file paths in `census_income_analysis.py`.
+   - Place CSV files in the repository root or update file paths in `census_income_analysis.ipynb`.
 3. **Run the Code**:
-   - Open `census_income_analysis.py` in a Python IDE or Jupyter Notebook.
+   - Open `census_income_analysis.ipynb` in a Python IDE or Jupyter Notebook.
    - Update dataset paths in the script as needed.
    - Execute the script to preprocess data, generate visualizations, and train the predictive model.
 
@@ -94,7 +94,7 @@ The dataset, sourced from the [US Census Data website](https://data.census.gov/)
 
 ## Project Files
 
-- `census_income_analysis.py`: Python script for data preprocessing, EDA, visualization, and predictive modeling.
+- `census_income_analysis.ipynb`: Python script for data preprocessing, EDA, visualization, and predictive modeling.
 - `docs/US_Census_Data_Analysis_Python_Project.pdf`: Comprehensive project report detailing methodology, findings, and recommendations.
 - `LICENSE`: GNU General Public License v3.0.
 
